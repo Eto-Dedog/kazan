@@ -1,0 +1,486 @@
+/* основные */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1410px;
+    margin: auto;
+}
+
+.container--head {
+    max-width: 1500px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+html {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+body{
+    background: url(../img/promo/bg-promo.png);
+    background-position: center;
+}
+
+/* 
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+*/
+
+/* Голова */
+.header__block{
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.header__block::before{
+    content: '';
+    background: url(../img/header/tomatoes.png) no-repeat right;
+    width: 322px;
+    height: 214px;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    z-index: -1;
+}
+
+.header__block__info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    border-bottom: 2px solid rgba(255, 153, 0, 0.5);
+    border-radius: 50px;
+
+}
+
+.card__head{
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+}
+
+.card__head:hover{
+    color: #FF9900;
+    transition: 0.5s;
+}
+
+.card__head:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    opacity: 0.5;
+    background: #FF9900;
+    transform: rotate(90deg);
+    right: -70px;
+}
+
+.circle__head{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.card__head__text{
+    max-width: 300px;
+    font-size: 18px;
+}
+
+.circle__link--phone{
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+/* навигация */
+
+.header__block__nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.header__nav__link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__nav__link:hover{
+    color: #FF9900;
+    transition: 0.5s;
+}
+
+.header__nav__link--catalog{
+    background: url(../img/header/arrow-down.svg) no-repeat right;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.header__nav__link--cazan{
+    background: url(../img/header/cazan.png) no-repeat left;
+    padding-left: 25px;
+}
+
+
+.button__shopping{
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 50px;
+    background: #FF9900 url(../img/header/shopping-cart.png) no-repeat right 15px top 3px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-family: 'Montserrat-Bold', sans-serif;
+    border: none;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.button__shopping:hover{
+    background: #FF4D00 url(../img/header/shopping-cart.png) no-repeat right 15px top 3px;
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
+}
+
+.button__shopping:hover::before {
+    display: flex;
+}
+
+.button__shopping::before{
+    content: '';
+    width: 132px;
+    height: 34px;
+    background: transparent;
+    position: absolute;
+    border: 2px solid #FF4D00;
+    top: -3px;
+    left: -4px;
+    border-radius: 25px;
+    display: none;
+}
+
+.catalog {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    left: 26%;
+    top: -5px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(255, 76, 0, 0.8);
+}
+
+.header__nav__link--catalog:hover > .catalog{
+    display: flex;
+    transition: 0.5s;
+}
+
+.catalog__link{
+    padding: 5px;
+}
+
+/* promo */
+.promo{
+    background: url(../img/vector.png) no-repeat bottom right;
+    padding-bottom: 30px;
+}
+.promo__block{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.promo__title::before{
+    content: '';
+    position: absolute;
+    background: url(../img/promo/pizza.png) no-repeat center;
+    width: 700px;
+    height: 700px;
+    right: 95px;
+    top: 180px;
+    border-radius: 50%;
+}
+
+.promo__title::after{
+    content: '';
+    position: absolute;
+    background: url(../img/promo/smoke-bottom.png) no-repeat center;
+    width: 700px;
+    height: 700px;
+    right: 95px;
+    top: 180px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+.promo__block::before{
+    content: '';
+    position: absolute;
+    width: 410px;
+    height: 303px;
+    background: url(../img/promo/steak.png) no-repeat left;
+    left: 0;
+    z-index: -1;
+}
+
+.promo__title{
+    color: #392219;
+    font-size: 72px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    max-width: 880px;
+}
+
+.promo__title__span{
+    color: #FF9900;
+    text-shadow: 4px -3px 1px #111, 2px 2px 1px #999;
+}
+
+.promo__info{
+    display: flex;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.money{
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.money__text{
+    font-size: 20px;
+}
+
+.money__text__span{
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.gift{
+    margin-top: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.gift__title{
+    color: #D39254;
+    font-size: 24px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding-right: 40px;
+    background: url(../img/promo/gift.png) no-repeat left 42% top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gift__block{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.gift__box{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.gift__box__title{
+    margin-left: 50px;
+    max-width: 200px;
+    font-size: 24px;
+}
+
+.gift__buttons{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.button{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+}
+
+.button--primary{
+    background: #FF9900;
+    color: #ffffff;
+    cursor: pointer; 
+    position: relative;
+}
+
+.button--primary:hover{
+    background: #FF4D00;
+    box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
+    transition: 0.5s;
+}
+
+.button--primary::before{
+    content: '';
+    width: 390px;
+    height: 42px;
+    background: transparent;
+    position: absolute;
+    border: 2px solid #FF4D00;
+    top: -3px;
+    left: -4px;
+    border-radius: 25px;
+    display: none;
+}
+
+.button--primary:hover::before{
+    display: flex;
+}
+
+.button--secondary{
+    background: transparent;
+    color: #CD823B;
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.button--secondary:hover{
+    background: #FF9900;
+    box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.gift__button{
+    margin-right: 10px;
+}
+
+.gift__title::before{
+    content: '';
+    background: url(../img/promo/thyme.png) no-repeat right;
+    position: absolute;
+    width: 343px;
+    height: 230px;
+    right: 0;
+}
+
+/* выгода */
+.benefit {
+    background: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.benefit::before{
+    content: '';
+    position: absolute;
+    background: url(../img/promo/pepper.png);
+    width: 390px;
+    height: 292px;
+    right: 3%;
+    top: -80%;
+}
+
+.benefit__cards{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit__circle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #FF9900;
+    border-radius: 50px;
+}
+
+.benefit__card__titel{
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.benefit__circle--one{
+    background: url(../img/benefit/payment.svg) no-repeat center;
+}
+
+.benefit__circle--two{
+    background: url(../img/benefit/cauldron.svg) no-repeat center;
+}
+
+.benefit__circle--three{
+    background: url(../img/benefit/discount.svg) no-repeat center;
+}
+
+.benefit__circle--four{
+    background: url(../img/benefit/comment.svg) no-repeat center;
+}
