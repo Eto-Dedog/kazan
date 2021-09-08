@@ -50,7 +50,7 @@ html {
 }
 
 body{
-    background: url(../img/promo/bg-promo.png);
+    background: url(../img/promo/bg-promo.png) no-repeat center / cover;
     background-position: center;
 }
 
@@ -374,6 +374,13 @@ body{
     color: #ffffff;
     cursor: pointer; 
     position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
 }
 
 .button--primary:hover{
@@ -382,7 +389,7 @@ body{
     transition: 0.5s;
 }
 
-.button--primary::before{
+.gift__button::before{
     content: '';
     width: 390px;
     height: 42px;
@@ -395,7 +402,7 @@ body{
     display: none;
 }
 
-.button--primary:hover::before{
+.gift__button:hover::before{
     display: flex;
 }
 
@@ -411,6 +418,8 @@ body{
     box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
     transition: 0.5s;
     color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .gift__button{
@@ -483,4 +492,539 @@ body{
 
 .benefit__circle--four{
     background: url(../img/benefit/comment.svg) no-repeat center;
+}
+
+/* feedback section */
+.section__title{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 48px;
+}
+
+.section__title__bold{
+    font-family: 'Gilroy-Bold';
+}
+
+.section__title__info{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 24px;
+}
+
+.feedback{
+    background: #ffffff url(../img/vector.png) no-repeat bottom right;
+    position: relative;
+}
+
+.feedback__block{
+    display: flex;
+    padding-top: 53px;
+    margin-bottom: 50px;
+}
+
+.feedback::before{
+    content: '';
+    width: 240px;
+    height: 242px;
+    background: url(../img/feedback/tomatos.png) no-repeat center;
+    position: absolute;
+    right: 0px;
+    bottom: -70px;
+}
+
+.feedback__block__img{
+    background: url(../img/feedback/man.png) no-repeat center bottom -50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.feedback__img__title{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
+}
+
+.feedback__img__text{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 18px;
+}
+
+.feedback__block__box{
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.feedback__block__box--title{
+    width: 213px;
+}
+
+.feedback__block__img__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    margin-right: -80px;
+}
+
+.feedback__block__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__block__info__title{
+    max-width: 627px;
+}
+
+.feedback__block__info__title__info{
+    text-align: end;
+    margin-top: -40px;
+    padding-bottom: 40px;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.feedback__block__info__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.feedback__block__info__card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 15px;
+}
+
+.feedback__card__head{
+    display: flex;
+    align-items: center;
+}
+
+.feedback__card__head__title{
+    margin-left: 40px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 186px;
+}
+
+.feedback__card__head__img__box{
+    width: 50px;
+    height: 50px;
+    background: #FF9900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback__card__bottom{
+    align-items: center;
+    text-align: center;
+}
+
+.feedback__card__text{
+    font-family: 'Gilroy-Regular', sans-serif;
+    max-width: 294px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.feedback__card__link{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 18px;
+    color:#FF9900;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* installment */
+
+.installment{
+    background: #ffffff;
+    position: relative;
+}
+
+.installment::after{
+    content: '';
+    width: 200px;
+    height: 150px;
+    background: url(../img/installment/terminal.png) no-repeat center;
+    background-size: 200px;
+    position: absolute;
+    left: 0px;
+    top: 24%;
+}
+
+.installment::before{
+    content: '';
+    width: 200px;
+    height: 262px;
+    background: url(../img/installment/tank.png) no-repeat center;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    top: 5%;
+}
+
+.installment__block{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.installment__block__card__img{
+    width: 127px;
+    display: flex;
+}
+
+.installment__block__title{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    background: url(../img/installment/discount.svg) no-repeat left;
+    padding-left: 40px;
+}
+
+.installment__block__cards{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;    
+    width: 100%;
+}
+
+.installment__block__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.installment__card__time{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.installment__card__title{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.installment__block__buttons{
+    position: relative;
+}
+
+.installment__block__buttons::before{
+    content: '';
+    width: 247px;
+    height: 42px;
+    background: transparent;
+    position: absolute;
+    border: 2px solid #FF4D00;
+    top: -3px;
+    left: -4px;
+    border-radius: 25px;
+    display: none;
+}
+
+.installment__block__buttons:hover::before{
+    display: flex;
+}
+
+/* original */
+.original{
+    position: relative;
+}
+
+.original__block{
+    padding-top: 80px;
+}
+
+.original::after{
+    content: '';
+    background: url(../img/original/peper.png) no-repeat center;
+    width: 300px;
+    height: 292px;
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+
+.original::before{
+    content: '';
+    background: url(../img/original/onion.png) no-repeat center;
+    width: 190px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 8%;
+}
+
+/* head */
+
+.original__block__head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.original__block__head__title{
+    max-width: 1097px;
+}
+
+.original__text{
+    font-size: 18px;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.rare__info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.original__block__head__box{
+    border: 2px solid #FF9900;
+    border-radius: 50%;
+}
+
+
+.original__block__head__box--large{
+    width: 176px;
+    height: 176px;
+}
+
+.manager__box{
+    position: relative;
+}
+
+.manager__box::after{
+    content: 'Алексей, управляющий';
+    font-size: 24px;
+    font-family: 'Gilroy-Regular', sans-serif;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.manager__box::before{
+    content: '';
+    position: absolute;
+    background:url(../img/original/talk.png) no-repeat center;
+    width: 285px;
+    height: 56px;
+    margin-top: 125px;
+    margin-left: 172px;
+}
+
+/* body */
+.original__block__body{
+    margin-top: 20px;
+    display: flex;
+}
+
+.original__block__body::after{
+    content: '';
+    width: 462px;
+    height: 489px;
+    background: url(../img/original/steak.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.original__block__body::before{
+    content: '';
+    width: 222px;
+    height: 350px;
+    background: url(../img/original/seasoning.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 35%;
+}
+
+/* left */
+.original__block__body__left{
+    flex-basis: 30%;
+    position: relative;
+    display: flex;
+}
+
+.original__block__body__left::before{
+    content: 'Полностью отлит вручную из чугунна без сварки, примесей и прочих химикатов';
+    position: absolute;
+    width: 303px;
+    height: 87px;
+    font-size: 18px;
+    font-family: 'Gilroy-Regular', sans-serif;
+    top: 8%;
+    left: 68%;
+    text-align: center;
+}
+
+.original__block__body__left__img{
+    width: 176px;
+    height: 176px;
+}
+/* center */
+.original__block__body__center{
+    flex-basis: 40%;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+}
+.button__original{
+    margin:auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button__original--pr{
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.button__original--ct--sec{
+    margin-bottom: 20px;
+}
+/* right */
+.original__block__body__right{
+    flex-basis: 40%;
+}
+
+.original__right__card{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.original__card__text{
+    margin-left: 20px;
+}
+
+.original__block__head__box--small{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.original__card__title{
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    max-width: 279px;
+}
+
+/* bottom */
+
+.original__block__bottom{
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.original__block__bottom::before{
+    content: '';
+    width: 153px;
+    height: 364px;
+    background: url(../img/original/kazan-bg.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+}
+
+/* bottom head */
+.original__block__bottom__head{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.original__block__bottom__head__text__title{
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 48px;
+    max-width: 940px;
+    margin-left: -25px;
+}
+
+.original__block__bottom__head__text__title__strong{
+    color: #FF4D00;
+}
+
+.original__block__bottom__head__text__title__item{
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 24px;
+    max-width: 904px;
+    margin-top: 15px;
+}
+
+.original__block__bottom__head__img__item{
+    width: 400px;
+}
+/* bottom foot */
+.original__block__bottom__foot{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.original__block__bottom__foot__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.original__block__bottom__foot__text__title{
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.original__block__bottom__foot__text__item__strong{
+    font-family: 'Gilroy-SemiBold', sans-serif;
+}
+
+.original__block__bottom__foot__text__item{
+    max-width: 673px;
+}
+
+.original__block__bottom__foot__img__item{
+    max-width: 230px;
+}
+
+.original__block__bottom__foot__marks{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.original__block__bottom__foot__mark{
+    margin: 15px;
 }
