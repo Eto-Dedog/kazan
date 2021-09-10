@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Казан МАРКЕТ</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
@@ -1708,19 +1708,164 @@
             <div class="over__block">
                 <h2 class="over__section__title sub__title__section">6 видов специальных печей и&nbsp;очагов для казана</h2>
                 <div class="over__menu">
-                    <div class="over__menu__btn">
-                        <div class="over__menu__btn__box">
-                            <img src="" alt="">
+                    <div id="overBtnOne" class="over__menu__btn over__menu__btn--active" onclick="btnOverOne()">
+                        <div id="overBtnBoxOne" class="over__menu__btn__box over__menu__btn__box--active">
+                            <img class="over__menu__btn__box__img " src="img/over/menu__btn__img-one.png" alt="btn-one">
                         </div>
                         <!-- /.over__menu__btn__box -->
                         <div class="over__menu__btn__title">
-                            <span></span>
+                            <span class="over__menu__btn__title__text">Стандарт</span>
+                        </div>
+                        <!-- /.over__menu__btn__title -->
+                    </div>
+                    <!-- /.over__menu__btn -->
+                    <div id="overBtnTwo" class="over__menu__btn" onclick="btnOverTwo()">
+                        <div id="overBtnBoxTwo" class="over__menu__btn__box">
+                            <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-two.png" alt="btn-one">
+                        </div>
+                        <!-- /.over__menu__btn__box -->
+                        <div class="over__menu__btn__title">
+                            <span class="over__menu__btn__title__text">С дверицей</span>
+                        </div>
+                        <!-- /.over__menu__btn__title -->
+                    </div>
+                    <!-- /.over__menu__btn -->
+                    <div id="overBtnThree" class="over__menu__btn" onclick="btnOverThree()">
+                        <div id="overBtnBoxThree" class="over__menu__btn__box">
+                            <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-three.png" alt="btn-one">
+                        </div>
+                        <!-- /.over__menu__btn__box -->
+                        <div class="over__menu__btn__title">
+                            <span class="over__menu__btn__title__text">С трубой</span>
+                        </div>
+                        <!-- /.over__menu__btn__title -->
+                    </div>
+                    <!-- /.over__menu__btn -->
+                    <div id="overBtnFour" class="over__menu__btn" onclick="btnOverFour()">
+                        <div id="overBtnBoxFour" class="over__menu__btn__box">
+                            <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-four.png" alt="btn-one">
+                        </div>
+                        <!-- /.over__menu__btn__box -->
+                        <div class="over__menu__btn__title">
+                            <span class="over__menu__btn__title__text">С зольником</span>
+                        </div>
+                        <!-- /.over__menu__btn__title -->
+                    </div>
+                    <!-- /.over__menu__btn -->
+                    <div id="overBtnFive" class="over__menu__btn" onclick="btnOverFive()">
+                        <div id="overBtnBoxFive" class="over__menu__btn__box">
+                            <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-five.png" alt="btn-one">
+                        </div>
+                        <!-- /.over__menu__btn__box -->
+                        <div class="over__menu__btn__title">
+                            <span class="over__menu__btn__title__text">VIP печь</span>
+                        </div>
+                        <!-- /.over__menu__btn__title -->
+                    </div>
+                    <!-- /.over__menu__btn -->
+                    <div id="overBtnSix" class="over__menu__btn" onclick="btnOverSix()">
+                        <div id="overBtnBoxSix" class="over__menu__btn__box">
+                            <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-six.png" alt="btn-one">
+                        </div>
+                        <!-- /.over__menu__btn__box -->
+                        <div class="over__menu__btn__title">
+                            <span class="over__menu__btn__title__text">Мангал 3в1</span>
                         </div>
                         <!-- /.over__menu__btn__title -->
                     </div>
                     <!-- /.over__menu__btn -->
                 </div>
                 <!-- /.over__menu -->
+                <div class="over__product">
+                        <div class="swiper OverSlider-swiper">
+                            <div class="swiper-wrapper OverSlider-wrapper">
+                              <div class="swiper-slide OverSlider-slide OverSlider-slide-one"><img class="OverSlider-slide-img" src="img/over/oven.png" alt="печь"></div>
+                              <div class="swiper-slide OverSlider-slide OverSlider-slide-two"><img class="OverSlider-slide-img" src="img/over/oven.png" alt="печь"></div>
+                              <div class="swiper-slide OverSlider-slide OverSlider-slide-three"><img class="OverSlider-slide-img" src="img/over/oven.png" alt="печь"></div>
+                            </div>
+                            <div class="swiper-button-next OverSlider-button-next"></div>
+                            <div class="swiper-button-prev OverSlider-button-prev"></div>
+                        </div>
+                        <!-- /.slider -->
+                    <div class="over__product__info">
+                        <div class="over__product__info__head">
+                            <div class="over__product__info__content">
+                                <h2 class="over__product__title">Печь стандарт</h2>
+                                <div class="kazans__card__content over__card__content">
+                                    <div class="kazans__card__content__item">
+                                        <span class="kazans__card__content__item__text">Дно</span>
+                                        <strong class="kazans__card__content__item__title">Плоское</strong>
+                                    </div>
+                                    <!-- /.kazans__card__content__item -->
+                                    <div class="kazans__card__content__item">
+                                        <span class="kazans__card__content__item__text">Диаметр</span>
+                                        <strong class="kazans__card__content__item__title">28 см.</strong>
+                                    </div>
+                                    <!-- /.kazans__card__content__item -->
+                                    <div class="kazans__card__content__item">
+                                        <span class="kazans__card__content__item__text">Глубина</span>
+                                        <strong class="kazans__card__content__item__title">10 см.</strong>
+                                    </div>
+                                    <!-- /.kazans__card__content__item -->
+                                </div>
+                            </div>
+                            <!-- /.over__product__info__content -->
+                            <div class="over__product__info__differences">
+                                <span class="over__differences__text">Отличия от других</span>
+                                <div class="product__card__title">
+                                    <div id="overBtnBoxSix" class="over__menu__btn__box">
+                                        <img class="over__menu__btn__box__img" src="img/over/menu__btn__img-one.png" alt="btn-one">
+                                    </div>
+                                    <!-- /.over__menu__btn__box -->
+                                    <div class="over__menu__btn__title">
+                                        <span class="over__menu__btn__title__text over__product__card__title">Стандарт</span>
+                                    </div>
+                                    <!-- /.over__menu__btn__title -->
+                                </div>
+                                <!-- /.product__card__title -->
+                                <p class="products__card__text">
+                                    Это базовая версия, которая подойдет, если вы редко выезжаете за город и будете использовать печь не так часто.
+                                </p>
+                            </div>
+                            <!-- /.over__product__info__differences -->
+                        </div>
+                        <!-- /.over__product__info__head -->
+                        <div class="over__product__info__button">
+                            <div class="over__product__info__size">
+                                <span class="over__product__info__text">Печь под размер казана</span>
+                                <select class="info__product__list">
+                                    <option class="info__product__list__item" selected> 6 литров </option>
+                                    <option class="info__product__list__item"> Бебра </option>
+                                    <option class="info__product__list__item"> Бебра </option>
+                                </select>
+                            </div>
+                            <!-- /.over__product__info__size -->
+                            <div class="over__product__info__price">
+                                <span class="over__product__info__text">Цена печи со скидкой</span>
+                                <div class="kazan__card__price over__card__price">
+                                    <div class="kazan__card__price--off">
+                                        <span class="kazan__card__price--off__title">120 руб.</span>
+                                    </div>
+                                    <!-- /.kazan__card__price -->
+                                    <div class="kazan__card__price--on">
+                                        <strong class="kazan__card__price--on__title">100&nbsp;руб.</strong>
+                                        <span class="kazan__card__price--on__text">Цена с  сезонной скидкой</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.over__product__info__price -->
+                        </div>
+                        <!-- /.over__product__info__button -->
+                        <div class="kazan__card__buttons over__buttons">
+                            <a href="#" class="button--primary kazan__card__button over__button">Купить</a>
+                            <a href="#" class="kazan__card__button__shopping over__button"><img src="img/header/shopping-cart.png" alt="shopping-cart">
+                            <div class="kazan__card__button__shopping__plus">+</div></a>
+                        </div>
+                        <!-- /.kazan__card__buttons -->
+                    </div>
+                    <!-- /.over__product__info -->
+                </div>
+                <!-- /.over__product -->
             </div>
             <!-- /.over__block -->
         </div>
