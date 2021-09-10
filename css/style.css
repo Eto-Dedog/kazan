@@ -1486,3 +1486,13 @@ body{
     right: -15%;
 }
 
+/* over */
+
+.over__block{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.over__section__title{
+    max-width: 767px;
+}
