@@ -451,6 +451,7 @@ body{
 /* выгода */
 .benefit {
     background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     position: relative;
 }
@@ -524,6 +525,7 @@ body{
 
 .feedback{
     background: #ffffff url(../img/vector.png) no-repeat bottom right;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -665,6 +667,7 @@ body{
 
 .installment{
     background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -1781,6 +1784,7 @@ body{
 
 .reasons{
     background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-bottom: 100px;
 }
@@ -2296,8 +2300,8 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 150px;
     margin-bottom: 80px;
 }
 
@@ -2330,4 +2334,271 @@ body{
     font-size: 24px;
     max-width: 805px;
     font-weight: normal;
+}
+
+/* present */
+
+.present{
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.present::before{
+    content: '';
+    position: absolute;
+    background: url(../img/present/grass-left.png) no-repeat left;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+}
+
+.present::after{
+    content: '';
+    position: absolute;
+    background: url(../img/present/grass-right.png) no-repeat right;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+}
+
+.present__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.title__present{
+    padding-top: 30px;
+    font-size: 48px;
+}
+
+.text__present{
+    margin-top: 10px;
+    font-size: 24px;
+    max-width: 667px;
+    margin-bottom: 30px;
+}
+
+.text__present--strong{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.sub__title__present{
+    font-size: 24px;
+    text-align: center;
+}
+
+.form__present__completion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.present__input{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #808080;
+    border: none;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+}
+
+.present__input__name{
+    width: 330px;
+    height: 50px;
+}
+
+.present__input__email{
+    width: 570px;
+    height: 50px;
+}
+
+.present__input__tel{
+    width: 450px;
+    height: 50px;
+}
+
+.form__present__send{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 449px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.button__large{
+    width: 449px;
+    font-size: 20px;
+}
+
+.form__present__send::before{
+    content: '';
+    width: 450px;
+    height: 45px;
+    top: -4px;
+    background: transparent;
+    position: absolute;
+    border: 2px solid #FF4D00;
+    border-radius: 50px;
+    display: none;
+}
+
+.form__present__send:hover::before{
+    display: flex;
+}
+
+/* choose */
+.choose__block{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.button__choose{
+    margin-top: 50px;
+    width: 453px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+.button__choose::before{
+    content: '';
+    width: 457px;
+    height: 45px;
+    background: transparent;
+    position: absolute;
+    border: 2px solid #FF4D00;
+    border-radius: 50px;
+    display: none;
+    left: -4px;
+    top: -4px;
+}
+
+.button__choose:hover::before{
+    display: flex;
+}
+
+.choose__cards{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.choose__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.choose__card:not(:last-child):before{
+    content: '';
+    position: absolute;
+    background: url(../img/choose/arrow-right-large.png) no-repeat right;
+    width: 101px;
+    height: 75px;
+    right: -30%;
+    top: 12%;
+}
+
+.choose__card:not(:last-child){
+    margin-right: 100px;
+}
+
+.choose__card__title{
+    font-size: 18px;
+    max-width: 288px;
+    margin-bottom: 10px;
+}
+
+.choose__card__text{
+    font-size: 18px;
+    max-width: 267px;
+}
+
+.choose__card__box{
+    border: 2px solid #FF9900;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* afghan */
+.afghan{
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.afghan::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: url(../img/afghan/steak.png) no-repeat left;
+}
+
+.afghan::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: url(../img/afghan/garlic.png) no-repeat right;
+    top: 0;
+    right: -80px;
+}
+
+.afghan__block{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 150px;
+    background: url(../img/afghan/afghan-bg.png) no-repeat left 250px top 25px;
+    background-size: 448px;
+    position: relative;
+    z-index: 5;
+}
+
+.afghan__title{
+    font-size: 48px;
+    max-width: 689px;
+    margin-bottom: 30px;
+    margin-right: 65px;
+}
+
+.afghan__text{
+    font-size: 24px;
+    padding-left: 40px;
+    background: url(../img/afghan/procent.png) no-repeat left;
+    margin-bottom: 50px;
+}
+
+.afghan__button{
+    margin-right: 383px;
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
 }
