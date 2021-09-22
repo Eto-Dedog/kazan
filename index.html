@@ -64,7 +64,7 @@
                         </span>
                     </a>
                     <!-- /.card-head -->
-                    <button class="button__shopping button__shopping-adpt">Корзина
+                    <button onclick="modal()" class="button__shopping button__shopping-adpt">Корзина
                         <span class="button__shopping__numbers">1</span>
                     </button>
                 </div>
@@ -85,7 +85,7 @@
                     <a href="#" class="header__nav__link">Как работаем</a>
                     <a href="#" class="header__nav__link">Вопросы</a>
                     <a href="#" class="header__nav__link header__nav__link--cazan">Афганские казаны</a>
-                    <button class="button__shopping">Корзина
+                    <button onclick="modal()" class="button__shopping">Корзина
                         <span class="button__shopping__numbers">1</span>
                     </button>
                 </nav>
@@ -9307,6 +9307,32 @@
     </footer>
     <!-- /.footer -->
     <a href="#up" class="up button--primary">↑</a>
+    <section id="modalOverlay" class="basket d-none">
+        <div class="miss__box">
+            <div id="modalBlock" class="basket__block">
+                <div class="container">
+                    <div class="basket__head__box">
+                        <h2 class="section__title basket__title">Корзина</h2>
+                        <div onclick="modalClose()" class="close button--primary">X</div>
+                    </div>
+                    <!-- /.basket__head__box -->
+                    <div class="basket__body__box">
+                        <span class="basket__item">Казан 15000рублей</span>
+                        <div  class="close button--primary">X</div>
+                    </div>
+                    <!-- /.basket__body__box -->
+                    <div class="basket__bottom__box">
+                        <button class="button--primary">
+                            Оплатить
+                        </button>
+                    </div>
+                    <!-- /.basket__bottom__box -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.basket -->
+        </div>
+    </section>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
