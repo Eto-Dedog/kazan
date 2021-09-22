@@ -151,6 +151,11 @@ body{
     margin-right: 10px;
 }
 
+.card__head:hover{
+    transform: rotate(3deg);
+    transition: 0.5s;
+}
+
 .card__head__text{
     max-width: 300px;
     font-size: 18px;
@@ -3056,6 +3061,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    border: 1px solid #000000;
 }
 
 .close.button--primary:hover{
