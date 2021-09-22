@@ -135,6 +135,10 @@ body{
     right: -70px;
 }
 
+.card__phone::before{
+    display: none;
+}
+
 .circle__head{
     width: 50px;
     height: 50px;
