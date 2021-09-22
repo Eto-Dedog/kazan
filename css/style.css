@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -51,6 +52,23 @@ html {
 
 body{
     background: url(../img/promo/bg-promo.png) no-repeat center / cover;
+}
+
+.up.button--primary{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    padding:0;
+    right: 5px;
+    bottom: 5px;
+    z-index: 15;
+    font-size: 24px;
+    border: 1px solid #000000;
+    text-decoration: none;
 }
 
 /* 
@@ -393,6 +411,7 @@ body{
     border-radius: 25px;
     border: none;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .button--primary:hover{
@@ -2376,6 +2395,7 @@ body{
     height: 200px;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 
 .present::after{
@@ -2432,6 +2452,7 @@ body{
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 20px;
+    z-index: 1;
 }
 
 .present__input__name{
@@ -3014,7 +3035,7 @@ body{
 }
 
 @media (max-width:1410px) {
-    .promo__block,.benefit__cards,.feedback__block,.installment__block,.original__block,.promotion__block,.kazans__block,.kazans__block,.set__block,.over__block,.stock__block,.promotion--ten,.accessories__block,.reasons__block,.rating__block,.recipes__block,.present__block,.questions__block,.locations__block,.footer__block{
+    .promo__block,.benefit__cards,.feedback__block,.installment__block,.original__block,.promotion__block,.kazans__block,.kazans__block,.set__block,.over__block,.stock__block,.promotion--ten,.accessories__block,.reasons__block,.rating__block,.recipes__block,.present__block,.questions__block,.locations__block,.footer__block,.afghan__block{
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -3101,6 +3122,12 @@ body{
     }
     .afghan__block{
         background: none;
+    }
+    .original__block__body::before{
+        display: none;
+    }
+    .original__block__bottom::before{
+        display: none;
     }
 }
 
