@@ -51,7 +51,7 @@ html {
 }
 
 body{
-    background: url(../img/promo/bg-promo.png) no-repeat center / cover;
+    background: url(../img/promo/bg-promo.png) no-repeat center fixed;
 }
 
 .up.button--primary{
@@ -2329,6 +2329,11 @@ body{
     opacity: 0.5;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.comment__text__more:hover{
+    color: #FF4D00;
+    transition: 0.5s;
 }
 
 /* recipes */
