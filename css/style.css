@@ -3087,9 +3087,6 @@ body{
     .present::after{
         display: none;
     }
-    .afghan{
-        display: none;
-    }
     .stock__card{
         margin-top: 25px;
     }
@@ -3098,6 +3095,12 @@ body{
     }
     .promo__block::before{
         display: none;
+    }
+    .afghan::after{
+        display: none;
+    }
+    .afghan__block{
+        background: none;
     }
 }
 
@@ -3281,6 +3284,21 @@ body{
     .title__rating::after{
         display: none;
     }
+    .afghan::before{
+        display: none;
+    }
+    .afghan__title{
+        text-align: center;
+    }
+    .afghan__text{
+        text-align: center;
+    }
+    .afghan__button{
+        margin-right: 0px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @media (max-width:768px) {
@@ -3399,6 +3417,17 @@ body{
     }
     .questions__block{
         margin-bottom: 50px;
+    }
+    .afghan__text{
+        background: none;
+        padding-left: 0px;
+    }
+    .afghan__block{
+        padding-bottom: 50px;
+    }
+    .afghan__title{
+        margin-right: 0px;
+        margin-bottom: 30px;
     }
 }
 
