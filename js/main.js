@@ -34,6 +34,13 @@ var swiper = new Swiper(".Comment-swiper", {
     },
   });
 
+function modal() {
+  document.getElementById("modalOverlay").classList.remove("d-none");
+}
+
+function modalClose() {
+  document.getElementById("modalOverlay").classList.add("d-none");
+}
 
 function btnOverOne() {
   document.getElementById("overBtnOne").classList.add("over__menu__btn--active");
