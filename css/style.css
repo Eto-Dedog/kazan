@@ -3001,6 +3001,75 @@ body{
 .footer__nav__link:hover{
     color: #FF9900;
     transition: 0.5s;
+    z-index: 100;
+}
+
+/* модальное окно */
+.basket{
+    background: rgba(17, 17, 17,0.3);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 501;
+}
+
+.basket__block{
+    display: flex;
+    background: #fff;
+    width: 620px;
+    height: 300px;
+    margin: auto;
+    padding: 15px;
+    position: fixed;
+    z-index: 101;
+    border-radius: 25%;
+    z-index: 503;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+.basket__body__box{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.basket__head__box{
+    display: flex;
+    align-items: center;
+}
+
+.basket__title{
+    margin-right: 200px;
+}
+
+.close.button--primary{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.close.button--primary:hover{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: auto;
+    background: red;
+    color: #000000;
+}
+
+.basket__bottom__box{
+    display: flex;
+    margin-top: 25px;
 }
 
 /* адаптация */
@@ -3464,6 +3533,15 @@ body{
     .afghan__title{
         margin-right: 0px;
         margin-bottom: 30px;
+    }
+    .basket__block{
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 320px;
+        height: 220px;
+    }
+    .basket__title{
+        margin-right: 100px;
     }
 }
 
