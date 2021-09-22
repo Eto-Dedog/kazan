@@ -3012,7 +3012,7 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 501;
+    z-index: 500;
 }
 
 .basket__block{
@@ -3023,7 +3023,7 @@ body{
     margin: auto;
     padding: 15px;
     position: fixed;
-    z-index: 101;
+    z-index: 502;
     border-radius: 25%;
     z-index: 503;
     margin-top: 10%;
