@@ -3093,6 +3093,12 @@ body{
     .stock__card{
         margin-top: 25px;
     }
+    .reasons__block{
+        background: none;
+    }
+    .promo__block::before{
+        display: none;
+    }
 }
 
 @media (max-width:1200px) {
@@ -3174,6 +3180,12 @@ body{
     }
     .footer__nav{
         margin-bottom: 25px;
+    }
+    .original::before{
+        display: none;
+    }
+    .original::after{
+        display: none;
     }
 }
 
