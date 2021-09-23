@@ -1000,6 +1000,11 @@ body{
     justify-content: center;
 }
 
+.original__right__card:hover > .original__block__head__box{
+    border: 2px solid #F4511E;
+    transition: 0.5s;
+}
+
 .original__card__title{
     font-family: 'Gilroy-SemiBold', sans-serif;
     font-size: 24px;
@@ -3606,6 +3611,9 @@ body{
         width: 300px;
     }
     .locations__head__photos{
+        display: none;
+    }
+    .gift__button:hover::before{
         display: none;
     }
 }
